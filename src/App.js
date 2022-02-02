@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Profile from './Profile/Profile';
+import {Row, Col, Container} from "react-bootstrap"
 
 function App() {
+  const fullName = "Sofiene Sdiri"
+  const bio = "Hi my name is Sofiene, i'm 27 years old and i'm a fullstack developper"
+  const profession = "Fullstack developper"
+  const handleName=(a)=>{
+    return alert(`${a}`)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Container>
+      <Row>
+        <Col></Col>
+        <Col><Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName}>
+              <img src='image.jpg'></img>
+            </Profile>
+          </Col>
+        <Col></Col>
+      </Row>
+    </Container>
+    
+
+      
     </div>
   );
 }
