@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Profile from './Profile/Profile';
 import {Row, Col, Container} from "react-bootstrap"
